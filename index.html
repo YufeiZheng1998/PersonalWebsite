@@ -314,7 +314,8 @@
 										<div class="popup_details">
 											<div class="main_details">
 												<div class="textbox">
-													<p>Canny Edge Detection is one of the most well-known algorithms developed by John F. Canny to detect a wide range of edges in images. This algorithm can find the edge precisely. However, the algorithm is inefficient when processing an image on CPUs, even though each pixel is processed independently. To address this issue, paralleling the image processing on each pixel can enhance the algorithm’s performance. Thus, in this project, we will try to optimize the performance of Canny Edge Detection by using SIMD instructions and OpenMP to process pixels simultaneously.</p>
+													<p>Canny Edge Detection is one of the most well-known algorithms developed by John F. Canny to detect a wide range of edges in images. This algorithm can find the edge precisely. However, the algorithm is inefficient when processing an image on CPUs, even though each pixel is processed independently. To address this issue, paralleling the image processing on each pixel can enhance the algorithm’s performance.</p> 
+													<p>In this project, we will try to optimize the performance of Canny Edge Detection by using SIMD instructions and OpenMP to process pixels simultaneously.</p>
 													<p>For the details of the design or some snippets of the code, please email me. I can share some useful thoughts.</p>
 												</div>
 												<div class="detailbox">
@@ -351,12 +352,15 @@
 										<div class="popup_details">
 											<div class="main_details">
 												<div class="textbox">
-													<p>Enable to lift 3D Human skeleton pose from RGB 2D image.</p>
-													<p>Innovative Parts: 
-													<p>Unsupervised learning: It's not even necessary for you to feed this model 2D labeled data, just the 2D joints will get all net worked.</p>
-													<p>3D data FREE: You don't even need the 3D data to train your model, by firstly generate the 3D pose and secondly generate the 3D pose by transformation and inverse transformation, then get MPJPE loss from these two 3D pose will eliminate the scarecity of 3D data.</p>
-													<p>Flexible: Someone might wonder that what if I got some 3D pose data? Congratulations! You can absolutely firstly compute the 3D regression loss to get the model "warm start", that will help a lot.</p>
-													<p> Overfitting avoided: By using discriminator to fit the normal distribution of normal human pose and geometrical constraints of human limb symmetry, some traits learned by the model can be robust to multiple types of data.</p>
+													<h6>Enable to lift 3D Human skeleton pose from RGB 2D image.</h6>
+													<ul>
+														<li><b>Unsupervised learning</b>: It's not even necessary for you to feed this model 2D labeled data, just the 2D joints will get all net worked.</li>
+														<li><b>3D data FREE</b>: You don't even need the 3D data to train your model, by firstly generate the 3D pose and secondly generate the 3D pose by transformation and inverse transformation, then get MPJPE loss from these two 3D pose will eliminate the scarecity of 3D data.</li>
+														<li><b>Flexibility</b>: Someone might wonder that what if I got some 3D pose data? Congratulations! You can absolutely firstly compute the 3D regression loss to get the model "warm start", that will help a lot.</li>
+														<li><b>Avoid Overfitting</b>By using discriminator to fit the normal distribution of normal human pose and geometrical constraints of human limb symmetry, some traits learned by the model can be robust to multiple types of data.</li>
+													</ul>
+													<br/>
+													<img src="img/portfolio/hpt.png" alt="" />
 												</div>
 												<div class="detailbox">
 													<ul>
@@ -365,8 +369,10 @@
 															<span>Yufei Zheng</span>
 														</li>
 														<li>
-															<span class="first">Code Link</span>
-															<span><a href="https://github.com/YufeiZheng1998/ComplexNet" target="_blank">SEE</a></span>
+															<span class="first">Code&Paper Link</span>
+															<span><a href="https://github.com/YufeiZheng1998/ComplexNet" target="_blank">See the Code</a></span>
+															<br/>
+															<span><a href="https://drive.google.com/file/d/11bN0Kq9k6d7ianw4nGgmcTVXoKTmTXT2/view?usp=sharing" target="_blank">See the Paper(Chinese)</a></span>
 														</li>
 													</ul>
 												</div>
@@ -379,11 +385,11 @@
 								<div class="list_inner">
 									<div class="image">
 										<img src="img/portfolio/410-460.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/cmu15213.jpg"></div>
+										<div class="main" data-img-url="img/portfolio/malloc1.png"></div>
 										<div class="overlay"></div>
 										<img class="svg" src="img/svg/right-arrow.svg" alt="" />
 										<div class="details">
-											<h3>CSAPP: Labs Bundle</h3>
+											<h3>AVL based Malloc and Concurrent Network Proxy</h3>
 											<span>CMU 18613-Coursework</span>
 										</div>
 									</div>
@@ -392,15 +398,20 @@
 										<div class="popup_details">
 											<div class="main_details">
 												<div class="textbox">
-													<p>These are all very valuable projects which can help you gain solid basic knowledge.</p>
-													<p>C Programming Lab(Warm up project)</p>
-													<p>Data Lab(This lab contains lots of triky bit manipulation which helps to solidify my understanding of number representation in C)</p>
-													<p>Bomb Lab(Fancy project which helps to gain solid Assembly Reading Skills and GDB debugging skills)</p>
-													<p>Attack Lab(Fancy project which helps to understand how basic hackers attack using different tricks)</p>
-													<p>Cache Lab(Hardcore project which requires implement a LRU cache from beginning and pass all the tests using C)</p>
-													<p>Malloc Lab(Hardcore project which requires implement Malloc using segregated list and optimized block searching skills, I ranked top 10 out of 200+ students)</p>
-													<p>Shell Lab(Fancy project which helps to solidify knowledge about process communication)</p>
-													<p>Proxy Lab(Fancy project which needs to solidify knowledge about Network and Multi-threads)</p>
+													<h6>AVL Malloc Memory Allocator(Implemented From Scratch with C)</h6>
+													<ul>
+														<li>Implemented a Dynamic Memory Management Unit(MMU) to achieve 77.3% average space utilization with high throughput, ranked top 1% out of 300 CMU students.</li>
+														<li>Keep tracking free blocks by segregated lists and with <b>optimized greedy best search policy</b> to increase space utilization without much lower down throughput.</li>
+														<li>Optimized the throughput of best search policy by implementing <b>AVL</b> and trid dozens of constant parameters to find a balance between space and time utilization.</li>
+													</ul>
+													<br/>
+													<h6>VPN(with Cache, Concurrency supported)</h6>
+													<ul>
+														<li>Implemented Safe I/O libraries using C and Linux POSIX, included safe File IO, scanf, printf and etc.</li>
+														<li>Handcrafted the Network communication frameworks by using Linux Socket and Mutex Linux</li>
+														<li>Designed the LRU Cache from scrach for Network Requests and passed the CMU robustness and throughput tests.</li>
+														<li>Implemented concurrency features for the proxy service, introduced read_write_lock and mutex_lock to avoid race and increase the proxy's throughput.</li>
+													</ul>
 												</div>
 												<div class="detailbox">
 													<ul>
@@ -505,7 +516,7 @@
 							<ul>
 								<li>90% - Development experience in large scale projects(Like internship, research). Read related books and blogs to get deeper usage. Solved hundreds of problems in Leetcode.</li>
 								<li>75% - Development experience in side projects(Like Udemy Project, medium workload course project). Know the special characteristic of this language.</li>
-								<li>60% - Development experience in small projects(certain tasks of course projects). Can easily ramp up when using new appearing Frameworks. </li>
+								<li>60% - Development experience in small projects(certain tasks of course projects). Can easily ramp up when refering new development frameworks. </li>
 							</ul>
 						</div>
 						<div class="dodo_progress wow fadeInUp" data-wow-duration=".7s" data-wow-delay=".2s">
