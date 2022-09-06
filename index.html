@@ -143,14 +143,14 @@
 												<br/>
 												<h6>Graduate Study</h6>
 												<ul>
-													<li>Master of Science in Software Engineering, GPA: 3.50/4.0</li>
+													<li>Master of Science in Software Engineering, GPA: 3.63/4.0</li>
 													<li>CourseWork: Introduction to Computer System 18613(A), Cloud Computing 15619(A), Foundation of Software Engineering(18652), How to Write Fast Code I/II(18645, 18646)</li>
 													<li>6 Teamwork experience on course projects, ALL reveived top ratings from my teammates in CATME tools</li>
 												</ul>
 												<br/>
 												<h5>Technical Skills</h5>
 												<p>
-													Yufei has strong background knowledge in Cloud Comptuing, Database, High Performance Computing(SIMD, OpenMP and CUDA) and Full Stack Web Development(Frontend: React, Vanilla JavaScript Backend: Node.js, SprintBoot and DJango). He has three internship experience in HonestCoin(2019 Java software Developer), data.ai(Big Data Engineer) and Verkada(Infrastructure Team). He has experience in building Data Platform, Spark ETL, Distributed System and Kubenetes Clusters.
+													Strong background knowledge in Cloud Infrastructure(Kubernetes, Istio, AWS), Big Data(Spark, Snowflake, Data pipeline), High Performance Computing(SIMD, OpenMP and CUDA) and Full Stack Web Development(Frontend: React, Vanilla JavaScript Backend: Node.js, SprintBoot and DJango). He has three internship experience in HonestCoin(2019 Java software Developer), data.ai(Big Data Engineer) and Verkada(Infrastructure Team).
 												</p>
 											</div>
 										</div>
@@ -168,8 +168,15 @@
 										<div class="popup_informations">
 											<div class="description">
 												<h5>Cloud Computing</h5>
-												<p>15619 Team Project(Cpp, Drogon, AWS RDS(MySQL), EKS with Managed Node Groups, Kubernetes, Docker, SparkSQL)</p>
+												<p>15619 Team Project(Cpp(Drogon), AWS RDS(MySQL), EKS with Managed Node Groups, Kubernetes, Docker, SparkSQL)</p>
+												<p> - QR Code en(de)code application, BitCoin Transaction ledger application(CPU Intensive), Twitter recommendation application(ETL, RDS query, memory intensive application)</p>
 												<p>Uber Message Recommendation(Java, Kafaka&Samza)</p>
+												<p> - Streaming data processing to recommend order for drivers</p>
+												<h5>Parallel Computing</h5>
+												<p>Fast CNN(CUDA, OpenMP)</p>
+												<p> - Reimplemented all layers of CNN with CUDA, OpenMP and profiling performance by specifying different layer sizes</p>
+												<p>Fast Canny Edge detection</p>
+												<p> - Implemented four kernels with embeded Assembly Language, SIMD and OpenMP, achieved 90%+ theoretical peak performance.</p>
 												<h5>Web Applications</h5>
 												<p><b>Demo videos are available at below sections</b></p>
 												<p>Emergency Social Network(Python, Django, TypeScript, React.js, MongoDB) [https://esn-yufei.herokuapp.com]</p>
@@ -200,33 +207,30 @@
 										<div class="popup_informations">
 											<div class="description">
 												<br/>
-												<!--
 												<h5><a href="https://www.verkada.com/">Verkada</a> - Data Platform and Infrastructure team</h5>
-												<p>Verkada is a very innovative company. Lots of people may think the camera is the thing that brings our out, but the answer is no! The real precious technology is our Computer Vision Algorithm and Cloud system.
-													We ranked <a href="https://www.linkedin.com/pulse/linkedin-top-startups-2021-50-us-companies-rise-linkedin-news/">top start-up companies rated by Linkedin</a> ...More to be introduced()
+												<p>
+													(Got the return offer)<a href="https://www.linkedin.com/pulse/linkedin-top-startups-2021-50-us-companies-rise-linkedin-news/">top start-up companies rated by Linkedin</a> 
 												</p>
-												<p>The project we are building from 2021 - 2022 is <b>The most powerful software infrastructure in the world</b>.</p>
+												<p>My main project is to support multi-arch features for the CI/CD systems.</p>
 												<ul>
-													<li>Something VERY AMAZING!!!</li>
+													<li>Launched Graviton Infrastructure from scratch(Linux CIS ARM64 AMI, spot instance: Spot.io, reserced: ASGs)</li>
+													<li>Implemneted multi-arch base images for all service images with Codebuild.</li>
+													<li>Designed multi-arch cloud image batch-build and integrated multi-arch build with Auto-deployment system via Codebuild, 8x+ faster than local docker buildx cross-platform build.</li>
+													<li>Designed multi-arch MonoCI batch-build webhook, CI image cache via DynamoDB, EventBridge, Codebuild and
+														handcrafted native local unit-tests env for M1 Mac, 10x faster compared with QEMU cross-platform build & run.</li>
+													<li>Implemented AWS backup resources validation for cross-region Disaster Recovery with boto3, AWS Lambda, IAM assume-role and Cloudwatch Event</li>
 												</ul>
 												<br/>
-												-->
-												<h5>Get Offer</h5>
-												<ul>
-													<li>Verkada -- Infrastructure Team Intern(Accepted the offer)</li>
-													<li>Snowflake -- Python UDF Team Intern(Building SnowPark) (Get the offer)</li>
-												</ul>
 												<br/>
 												<h5><a href="https://www.appannie.com/en/">data.ai(Former App Annie)</a> - Data Tech team</h5>
 												<p>App Annie is a unicorn company in Mobile APP analysis company, it devotes to become the best APP data provider in the world.
 													 We have 12 global Offices in US(San Francisco HQ), China, Canada,England, NetherLands, Singapore..  
 													I was interned at the core engineering team - Data Tech.</p>
-												<p>The project we are building from 2020 - 2021 is <b>Unified Data Warehouse</b>.</p>
+												<p>The project I was building from 2020 - 2021 is <b>Unified Data Warehouse</b>.</p>
 												<ul>
 													<li>Data Platform updated from 1.0 to 2.0 to enable more flexible scheduling, processing pipeline and utilization of resources managed by Kubernetes</li>
-													<li>Migrated All historical data to Snowflake and developed new routine ETL job to maintain higher data quality.</li>
-													<li>Snowflake Data Delivery System: Collect Schema and create Snowflake View for customers instead of Bulk Sharing(My Rating Dataset is firstly shared and Biggest Customer <b>Tiger Global Manament</b> gives big thumbs!)</li>
-													<li>Migrated All micro data service to One service to reduce maintainance cost and increase Kubernetes web services throughputs</li>
+													<li>Migrated Rating historical data(Trillion Records) to Snowflake and developed new routine ETL job to achieve higher data quality.</li>
+													<li>Snowflake Data Delivery System: Collect Schema and create Snowflake View for customers instead of Bulk Sharing(My Rating Dataset is shared with the Biggest Customer <b>Tiger Global Manament</b>)</li>
 													<li>Developed Unified Data Warehouse Reader to Pre-optimize the AQL(Like GraphQL in Meta) and redirect query to Snowflake or Traditional DB(make our data warehouse become both OLAP and OLTP system).</li>
 												</ul>
 												<br/>
@@ -454,12 +458,12 @@
 								<div class="list_inner">
 									<div class="image">
 										<img src="img/portfolio/410-460.jpg" alt="" />
-										<div class="main" data-img-url="img/portfolio/gocrawler.jpg"></div>
+										<div class="main" data-img-url="img/portfolio/fastcnn.png"></div>
 										<div class="overlay"></div>
 										<img class="svg" src="img/svg/right-arrow.svg" alt="" />
 										<div class="details">
-											<h3>Distributed Golang Crawler</h3>
-											<span>IMOOC Project</span>
+											<h3>Fast CNN</h3>
+											<span>CMU 18646 - How to Write Fast Code II</span>
 										</div>
 									</div>
 									<a class="kura_tm_full_link portfolio_popup" href="#"></a>
@@ -467,18 +471,52 @@
 										<div class="popup_details">
 											<div class="main_details">
 												<div class="textbox">
-													<h3> Under Construnction...</h3>
+													<h3>GPU & CPU Accelerated CNN</h3>
 												</div>
 												<div class="detailbox">
 													<ul>
 														<li>
-															<span class="first">Owner</span>
+															<span class="first">Tech Lead</span>
 															<span>Yufei Zheng</span>
 														</li>
+														<li>Designed Multi-core and Many-core acceleration for CNN training via Cpp, OpenMP, CUDA and Thrust.</li>
+														<li>Implemented GPU parallel patterns for four kernels and accelerated by using constant and shared memory.</li>
+														<li>Leveraged multiple cores in CPU via OpenMP and benchmarked profiling for CPU and GPU performance.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="list_inner">
+									<div class="image">
+										<img src="img/portfolio/410-460.jpg" alt="" />
+										<div class="main" data-img-url="img/portfolio/cc.png"></div>
+										<div class="overlay"></div>
+										<img class="svg" src="img/svg/right-arrow.svg" alt="" />
+										<div class="details">
+											<h3>Twitter Analytics Web Services</h3>
+											<span>CMU 15619 - Cloud Computing</span>
+										</div>
+									</div>
+									<a class="kura_tm_full_link portfolio_popup" href="#"></a>
+									<div class="hidden_content">
+										<div class="popup_details">
+											<div class="main_details">
+												<div class="textbox">
+													<h3>High Performance Web Services</h3>
+												</div>
+												<div class="detailbox">
+													<ul>
 														<li>
-															<span class="first">Project Link</span>
-															<span><a href="https://github.com/YufeiZheng1998/GoCrawler" target="_blank">SEE</a></span>
+															<span class="first">Data Infra Lead</span>
+															<span>Yufei Zheng</span>
 														</li>
+														<li>Implemented two CPU-intensive and one Memory-intensive  web services via Drogon.core(Cpp), Jooby(Java).</li>
+														<li>Designed Key-Value style schema in MySQL and developed ETL logic and data lake to process 1TB Twitter dataset via \textbf{Scala, SparkSQL} by using Google Cloud Dataproc.</li>
+														<li>Launched AWS RDS, EKS and Load Balancer with \textbf{Terraform} and managed cloud services by \textbf{Kubernetes, Helm}.</li>
 													</ul>
 												</div>
 											</div>
@@ -549,7 +587,7 @@
 								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 							</div>
 							<div class="progress_inner" data-value="90">
-								<span><span class="label">Java</span><span class="number">90%</span></span>
+								<span><span class="label">C++</span><span class="number">90%</span></span>
 								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 							</div>
 							<div class="progress_inner" data-value="90">
@@ -557,7 +595,7 @@
 								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 							</div>
 							<div class="progress_inner" data-value="75">
-								<span><span class="label">C++</span><span class="number">75%</span></span>
+								<span><span class="label">Java</span><span class="number">75%</span></span>
 								<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 							</div>
 							<div class="progress_inner" data-value="75">
@@ -601,7 +639,7 @@
 							</div>
 							
 							<div class="list_inner">
-								<span>Incoming Software Engineer Intern - Infrastructure Team</span>
+								<span>Software Engineer Intern - Infrastructure Team</span>
 							</div>
 							<div class="list_inner">
 								<span>Verkada - San Mateo, CA</span>
@@ -774,7 +812,7 @@
 									<div class="list_inner">
 										<!-- If you want to change or add any svg icons you can download here for free www.flaticon.com -->
 										<img class="svg" src="img/svg/placeholder.svg" alt="" />
-										<span>Mountain View 94040, CA, USA</span>
+										<span>Newark 94560, CA, USA</span>
 									</div>
 								</li>
 								<li>
